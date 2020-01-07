@@ -10,3 +10,5 @@ $loader = new \Twig\Loader\FilesystemLoader('./views/');
 $this->twig = new \Twig\Environment($loader, array('cache' => false,));
 
 Il faut alors préciser dans les controllers le dossier où se trouve la vue. Cela permet de pouvoir intégrer un layout global et non un layout par classe.
+
+Enfin il serait plus judicieux de ranger les 3 dossiers liés aux Modèles Vues Contrôleurs dans un dossier parent App. Il faudra cependant penser à cette architecture dès la création du projet avec Composer en initialisant le composer.json en conséquence.
