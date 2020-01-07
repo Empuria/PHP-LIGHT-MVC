@@ -12,5 +12,5 @@ function spot() {
       ]);
       $spot = new \Spot\Locator($cfg);
     }
-    return $spot;
+    return $spot; 
 }
