@@ -1,0 +1,23 @@
+{% extends "layout/layout.twig" %}
+
+{% block title %}MVC Test - Index{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        body {
+            background-color: black;
+            color: yellow;
+          }
+          .username {
+            color: green;
+          }
+    </style>
+{% endblock %}
+{% block content %}
+  <h2>List: </h2>
+  {% for user in userList %}
+    <li class="username">{{ user.name }}</li>
+  {% endfor %}
+  <hr />
+  <p>Quantity: {{ quantity }} users.</p>
+{% endblock %}

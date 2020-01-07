@@ -1,0 +1,22 @@
+{
+    "name": "lucasferrari/my-mvc",
+    "description": "Projet MCV PHP",
+    "type": "project",
+    "authors": [
+        {
+            "name": "viggo71",
+            "email": "lucas.ferrari15@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/spot2": "^2.2",
+        "twig/twig": "^3.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Components\\": "components/",
+        "Controllers\\": "controllers/",
+        "Models\\": "models/"
+      }
+    }
+}
